@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+</html>
+
+<head>
+     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Acciojob</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        * {
+            font-family: Satoshi, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+       
+
+
+        .nav-right>ul>li {
+            padding-inline: 15px;
+            list-style: none;
+        }
+
+        .career-right>.card {
+            width: 65%;
+            text-align: center;
+            padding: 16px;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 5px 5px yellowgreen;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .career-right>.card button {
+            border-radius: 10px;
+            color: white;
+            background: linear-gradient(to right, blue, magenta);
+            padding: 5px;
+            border: none;
+        }
+
+        .career-right>.card p {
+            font-size: 15px;
+            padding: 10px;
+            color: gray
+        }
+
+        .avg-salary img {
+            border-radius: 50%;
+            height: 25px;
+
+        }
+
+        .career-left .cell {
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 0px 0px 5px gray;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .sal-height {
+            line-height: 0px;
+        }
+
+        main {
+            background-color: rgb(236, 248, 255);
+            margin: 10px 5px;
+            padding: 10px;
+
+        }
+
+        main .hov:hover {
+            border: 3px solid pink;
+            cursor: pointer;
+        }
+
+        .hiring-partners {
+            width: 80%;
+            margin: auto;
+            margin-top: 40px;
+
+        }
+
+        .hiring-partners>p {
+            text-align: center;
+        }
+
+        .company-row1 {
+            overflow-x: scroll;
+        }
+
+        .company-row1>div>img {
+            width: 200px;
+            height: 80px;
+            border-radius: 5px;
+            /* border: 2px solid red; */
+            margin-inline: 20px;
+        }
+
+        .company-row1>div>img:hover {
+
+            /* border: 2px solid rgb(238, 255, 0); */
+            box-shadow: 2px 2px 25px rgba(230, 193, 32, 0.897);
+            cursor: pointer;
+
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .company-row1>div {
+            white-space: no-wrap;
+        }
+
+        .hiring-btn>button {
+
+            padding: 15px 40px;
+            border: 10px;
+            margin-top: 2rem;
+            border-radius: 10px;
+            font-size: 20px !important;
+        }
+
+        /* <!-- Student Success Stories: --> */
+.student-storoies{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+.card-success-1{
+    width: 450px;
+    height: 400px;
+    border-radius: 5px;
+    border: 2px solid blue;
+    padding: 20px;
+    box-shadow: 1px 1px 15px black !important;
+    border: none;
+     margin-inline: 10px;
+     overflow: hidden;
+     box-sizing: border-box;
+}
+ /* media Query */
+ @media screen  and (max-width:768px) {
+    .header-nav{
+      position: relative;
+      display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 50%;
+    }
+    .card-success{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    header{
+        background-color: aqua;
+    }
+    nav{
+        padding:2px;
+        margin:2px;
+        flex-direction: column;
+        border:2px solid red;
+
+    }
+    .nav-right, .nav-right>ul{
+        padding:2px;
+        margin:2px;
+        border:2px solid red;
+    }
+    .nav-right>ul, .nav-right>ul button{
+        flex-wrap:wrap;
+    }
+    .nav-left{
+        flex-wrap:wrap;
+        border:2px solid red;
+    }
+    .career{
+        width:100%;
+        flex-direction: column;
+    }
+    .career-left{
+        margin:2px;
+        padding:2px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:auto;
+    }
+    .career-right .card{
+        width: 100%;
+        flex-direction: column;
+    
+    }
+ }
+ @media screen and(min-width:150) and (max-width:400px) {
+    .career{
+        width:100%;
+        height:300px;
+        text-align:left;
+        align-items:left;
+    
+        flex-direction: column;
+    }
+    .career-right .card{
+        width: 100%;
+        height:300px;
+        text-align:left;
+        align-items:left;
+    
+    }
+
+ }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="d-flex justify-content-between align-items-center mx-5 px-5 sticky">
+            <div class="nav-left d-flex justify-content-between">
+                <div class="logo d-flex ">
+                    <img src="myimages/Accio logo.jpg" alt="logo">
+                    <h3 class="mx-2">Acciojob</h3>
+                </div>
+                <div class="border border-left-3 mx-4">
+                </div>
+                <img src="myimages/NSDC_Logo.jpg" alt="nsdc pic">
+            </div>
+
+            <div class="nav-right d-flex align-items-center px-2 m-2 mb-0">
+                <ul class="d-flex align-items-center">
+                    <li>Courses</li>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+
+                    <li>AccioJob Reviews</li>
+                    <li>Scholarship Test</li>
+                    <li>More</li>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    <button class="text-primary my-2 mx-4 py-2 px-4 rounded-3 border border-primary"
+                        type="button">Login</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+        <div class="vw-100 bg-primary p-2 text-center text-light">
+            Next batch starts in 22 Days, Hurry!
+        </div>
+
+        <section class=" border border-dark career d-flex justify-content-around align-items-center p-5">
+            <div class="career-left">
+                <h2 class="mr-3 w-75">
+                    Launch your career with our <span class="text-primary fw-5"><b>Full Stack Developer
+                        </b></span>Courses
+                </h2>
+                <p class=" w-50 my-4">Curriculum designed and taught by Alumini from BIT's & Leading Tech Companies.</p>
+                <div class="cell mb-5">
+                    <div class="avg-salary d-flex">
+                        <img src="myimages/Frame.png">
+                        <div>
+                            <p>41 Lakhs</p>
+                            <p class="sal-height"> Highest Salary</p>
+                        </div>
+                    </div>
+                    <div class="avg-salary d-flex">
+                        <img src="myimages/Group 48097592.png">
+                        <div>
+                            <p>41 Lakhs</p>
+                            <p class="sal-height"> Highest Salary</p>
+                        </div>
+                    </div>
+                    <div class="avg-salary d-flex">
+                        <img src="myimages/Ellipse 32.png">
+                        <div>
+                            <p>41 Lakhs</p>
+                            <p class="sal-height"> Highest Salary</p>
+                        </div>
+                    </div>
+                    <div class="avg-salary d-flex">
+                        <img src="myimages/Group 48097591.png">
+                        <div>
+                            <p>41 Lakhs</p>
+                            <p class="sal-height"> Highest Salary</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="mt-5 rounded-pill shadow-lg bg-light px-3 py-2 w-50">Made with &#10084 by an Acciojob Student
+                </p>
+            </div>
+            <div class="career-right mx-3 px-5">
+                <div class="card ">
+                    <h3>Start Attending Live classes for free!</h3>
+                    <p>Live lectures & Assignments curated by Top Tech Professionals</p>
+                    <form>
+                        <input class="my-2 w-100 p-2 rounded-3 border-0 bg-light" type="text"
+                            placeholder="vikas panwar">
+                        <input class="my-2 w-100 p-2 rounded-3 border-0 bg-light" type="tel" placeholder="Phone number">
+                        <button class="my-2 w-100" type="button">Apply Now For Free</button>
+                    </form>
+                    <p>By clicking 'Apply Now For Free', you agree to our</p>
+                    <a href="#" class="text-decoration-none line-height-1">Terms & Conditions</a>
+                </div>
+            </div>
+        </section>
+   
+
+    <main>
+        <section class="text-center p-2">
+            <div class="text-uppercase text-center p-4">
+                <h5 style="color: purple;">Learn full stack web development</h5>
+                <h2 class="text-primary fw-4"><b>Our courses</b></h2>
+            </div>
+            <div class="d-flex justify-content-evenly mt-2">
+                <img class=" hov rounded-3 padding-inline-2 mr-3 overflow-hidden" src="myimages/Sapling Card.jpg"
+                    alt="Sapling  image">
+                <img class="rounded-3 padding-inline-2 " src="myimages/Pioneer Card.jpg" alt="Pioneer image">
+            </div>
+        </section>
+    </main>
+
+
+    <section class="hiring-partners">
+        <p style="color: #992FED; font-size: 19px;">Over 300+ HIRING PARTENERS</p>
+        <P style="font-size: 42px; list-style: 10px;"> Top Startups & MNC's Hire</P>
+        <p style="font-size: 42px; color: #3c88ee; line-height: 5px;">Software Engineer</p>
+        <p style="color: #595959; font-size: 23px;"> from Acciojob upto 41 Lakhs</p>
+
+
+        <div class="company-row1 d-flex">
+            <div>
+                <img src="myimages/image 23.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/image 38.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/Frame 636.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/Frame 631.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/Frame 632.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/image 53.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/image 23.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/image 38.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/Frame 636.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/Frame 631.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/Frame 632.svg" alt="">
+            </div>
+            <div>
+                <img src="myimages/image 53.svg" alt="">
+            </div>
+
+        </div>
+        <div class="hiring-btn d-flex align-itmes-center justify-content-center my-10">
+
+            <button class="btn btn-primary">
+                Placement Report <img src="./assests/Frame (11).svg" alt="" />
+            </button>
+        </div>
+
+
+        <!-- Student Success Stories: -->
+
+        <section class="student-storoies">
+            <p style="text-align: center; font-size: 40px;">Accio Wall of Love</p>
+            <p style="text-align: center; font-size:20px; color: #4f4f4f;">Our alumini say it Best</p>
+
+            <div class="card-success d-flex ">
+                <div class="card-success-1">
+                    <div class="d-flex align-itmes-center">
+                        <img src="myimages/Ellipse 42.jpg" alt="">
+                        <span>
+                            <h4>Vikas singh</h4>
+                            <p>SDE at TCS Limited </p>
+                        </span>
+                        <div style="padding-left: 50px;">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 10px;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum hic, nobis tempore dignissimos rem
+                        porro. Quisquam, ab impedit odio quidem maiores rerum nihil laborum. Rem, quas praesentium nisi
+                        repellat beatae, nemo distinctio sit, necessitatibus officia omnis non velit blanditiis
+                        consectetur!
+                    </div>
+                    <p style="color: #4f4f4f;">15June 2022</p>
+                </div>
+                <div class="card-success-1">
+                    <div class="d-flex align-itmes-center">
+                        <img src="myimages/Ellipse 42.jpg" alt="">
+                        <span>
+                            <h4>Akash Panwar</h4>
+                            <p>SDE at TCS Limited </p>
+                        </span>
+                        <div style="padding-left: 50px;">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 10px;  box-sizing: border-box;">
+                        Lo, ab impedit odio quidem maiores rerum nihil laborum. Rem, quas Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Tempora ex tenetur aliquam, ipsa obcaecati, perspiciatis
+                        necessitatibus vel delectus quia esse, cum ea? Dicta reiciendis possimus odit corrupti rerum
+                        eligendi facere molestias tempora perspiciatis.
+                    </div>
+                    <p style="color: #4f4f4f;">15June 2022</p>
+                </div>
+                <div class="card-success-1">
+                    <div class="d-flex align-itmes-center">
+                        <img src="myimages/Ellipse 42.jpg" alt="">
+                        <span>
+                            <h4>Akshay Khanna</h4>
+                            <p>SDE at TCS Limited </p>
+                        </span>
+                        <div style="padding-left: 50px;">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 10px;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum hic, nobis tempore dignissimos rem
+                        porro. Quisquam, ab impedit odio quidem maiores rerum nihil laborum. Rem, quas praesentium nisi
+                        repellat beatae, nemo distinctio sit, necessitatibus officia omnis non velit blanditiis
+                        consectetur!
+                    </div>
+                    <p style="color: #4f4f4f;">15June 2022</p>
+                </div>
+
+
+            </div>
+
+
+            <br><br><br><br>
+        </section>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
